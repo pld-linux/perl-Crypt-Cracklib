@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	Cracklib
-Summary:	Crypt::Cracklib Perl module - Perl interface to Cracklib
-Summary(pl):	Modu³ Perla Crypt::Cracklib - perlowy interfejs do biblioteki Cracklib
+Summary:	Crypt::Cracklib - Perl interface to Cracklib
+Summary(pl):	Crypt::Cracklib - perlowy interfejs do biblioteki Cracklib
 Name:		perl-Crypt-Cracklib
 Version:	0.01
 Release:	2
@@ -25,7 +25,8 @@ Aleca Muffetta.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-echo -e '/usr/include\n/usr/lib' | perl Makefile.PL
+%{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"Crypt::Cracklib")' \
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
