@@ -5,7 +5,7 @@ Summary:	Crypt::Cracklib - Perl interface to Cracklib
 Summary(pl):	Crypt::Cracklib - perlowy interfejs do biblioteki Cracklib
 Name:		perl-Crypt-Cracklib
 Version:	0.01
-Release:	2
+Release:	3
 License:	unknown
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
