@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	Crypt
-%define		pnam	Cracklib
+%define	pdir	Crypt
+%define	pnam	Cracklib
 Summary:	Crypt::Cracklib - Perl interface to Cracklib
 Summary(pl):	Crypt::Cracklib - perlowy interfejs do biblioteki Cracklib
 Name:		perl-Crypt-Cracklib
