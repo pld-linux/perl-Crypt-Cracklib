@@ -2,7 +2,7 @@
 %define		pdir	Crypt
 %define		pnam	Cracklib
 Summary:	Crypt::Cracklib - Perl interface to Cracklib
-Summary(pl):	Crypt::Cracklib - perlowy interfejs do biblioteki Cracklib
+Summary(pl.UTF-8):   Crypt::Cracklib - perlowy interfejs do biblioteki Cracklib
 Name:		perl-Crypt-Cracklib
 Version:	0.01
 Release:	3
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This is a simple interface to Alec Muffett's Crack library.
 
-%description -l pl
-Modu≥ Crypt::Cracklib jest prostym interfejsem do biblioteki Crack
+%description -l pl.UTF-8
+Modu≈Ç Crypt::Cracklib jest prostym interfejsem do biblioteki Crack
 Aleca Muffetta.
 
 %prep
