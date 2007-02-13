@@ -2,7 +2,7 @@
 %define		pdir	Crypt
 %define		pnam	Cracklib
 Summary:	Crypt::Cracklib - Perl interface to Cracklib
-Summary(pl.UTF-8):   Crypt::Cracklib - perlowy interfejs do biblioteki Cracklib
+Summary(pl.UTF-8):	Crypt::Cracklib - perlowy interfejs do biblioteki Cracklib
 Name:		perl-Crypt-Cracklib
 Version:	0.01
 Release:	3
