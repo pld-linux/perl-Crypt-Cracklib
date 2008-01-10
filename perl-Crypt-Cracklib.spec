@@ -29,6 +29,7 @@ Aleca Muffetta.
 %{__perl} -MExtUtils::MakeMaker -e 'WriteMakefile(NAME=>"Crypt::Cracklib")' \
 	INSTALLDIRS=vendor
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %install
