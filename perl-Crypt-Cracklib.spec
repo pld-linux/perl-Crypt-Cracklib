@@ -6,10 +6,12 @@ Summary(pl.UTF-8):	Crypt::Cracklib - perlowy interfejs do biblioteki Cracklib
 Name:		perl-Crypt-Cracklib
 Version:	0.01
 Release:	4
-License:	unknown
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	a24234aeb3eb9eac71c344f9ca736b7b
+URL:		http://search.cpan.org/dist/Crypt-Cracklib/
 BuildRequires:	cracklib-devel
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
