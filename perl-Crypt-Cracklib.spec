@@ -48,6 +48,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes
 %{perl_vendorarch}/Crypt/Cracklib.pm
 %dir %{perl_vendorarch}/auto/Crypt/Cracklib
-%{perl_vendorarch}/auto/Crypt/Cracklib/*.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Crypt/Cracklib/*.so
 %{_mandir}/man3/Crypt::Cracklib.3pm*
