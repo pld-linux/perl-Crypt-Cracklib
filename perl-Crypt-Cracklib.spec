@@ -4,14 +4,16 @@ Summary:	Crypt::Cracklib - Perl interface to Cracklib
 Summary(pl.UTF-8):	Crypt::Cracklib - perlowy interfejs do biblioteki Cracklib
 Name:		perl-Crypt-Cracklib
 Version:	1.7
-Release:	12
+Release:	13
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Crypt/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	8179f32d7470780e001532bcb6cb4080
+Patch0:		no-tests.patch
 URL:		http://search.cpan.org/dist/Crypt-Cracklib/
 BuildRequires:	cracklib-devel
+BuildRequires:	perl-Module-Install
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -25,6 +27,7 @@ Aleca Muffetta.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \

@@ -1,0 +1,13 @@
+--- Crypt-Cracklib-1.7/Makefile.PL~	2010-12-30 00:30:32.000000000 +0100
++++ Crypt-Cracklib-1.7/Makefile.PL	2021-05-08 22:29:34.609180449 +0200
+@@ -8,10 +8,6 @@
+ homepage 'https://github.com/dsully/perl-crypt-cracklib';
+ bugtracker 'https://github.com/dsully/perl-crypt-cracklib/issues';
+ 
+-test_requires 'Test::Pod::Coverage' => '1.08';
+-test_requires 'Pod::Coverage' => '0.19';
+-test_requires 'Test::More' => '0.47';
+-
+ requires_external_cc();
+ 
+ cc_lib_links('crack');
